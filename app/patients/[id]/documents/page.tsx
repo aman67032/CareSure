@@ -166,7 +166,7 @@ export default function PatientDocumentsPage() {
                     </button>
                   </div>
                   <a
-                    href={`http://localhost:5000/${doc.file_path}`}
+                    href={`${process.env.NEXT_PUBLIC_API_URL}/documents/${doc.id}/download`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block text-violet-600 hover:text-violet-700 text-sm font-semibold"
